@@ -99,14 +99,62 @@ main{
   font-weight: 700;
   color: rgb(255, 144, 14);
 }
+/* facts section */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.facts-card-container .card{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    text-align: center;
+    padding:30px;
+}
+.facts-card-container .card-starts{
+    font-size: 2.8rem;
+    color: rgb(66, 66, 66);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.facts-card-container .card-title{
+  font-weight:600;
+  font-size: 1.3rem;  
+  color: rgb(114, 114, 114);
+  margin-top: 5px;
+ 
+}
+/* sponsor styles */
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+.sponsors-img-container img{
+    width: 165px;
+}
 /* responsive media queries for header */
 /* mobile devices */
 @media screen and (max-width: 576px) {
     header{
         padding:20px;
     }
-    nav{
+    nav,.facts-card-container,.sponsors-img-container,.sponsors-img-container{
         flex-direction: column;
+    }
+    .teams-content,.facts-card-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    
+    }
+    .facts-card-container{
+        gap:20px;
     }
     
 }
